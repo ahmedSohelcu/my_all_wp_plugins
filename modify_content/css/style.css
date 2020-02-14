@@ -1,0 +1,16 @@
+.entry-title a {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 5px;
+    /* text-align: center; */
+    font-size: 18px;
+    color: #fff;
+    /*background: #4BA339;*/
+    box-shadow: 10px 10px 21px #4BA339;
+}
+.entry-content p{
+    color: #fff;
+    background: #106B96;
+    box-shadow: 4px 2px 21px #106B96;
+    padding: 13px;
+}
