@@ -5,7 +5,7 @@
 /*
 Plugin Name: Social Short code Plugin (Ahmed)
 Plugin URI: ahmedctg.website
-Description: Your can add social media button with dynamic content,link, class and name using short code.Use shortcode like :[social name="facebook" href="www. facebook .com" class=" facebook "  content=" Facebook "][social name="twitter" href="www.twitter.com" class="twitter"  content="Twitter"][social name="linkedin" href="www. linkedin .com" class=" linkedin "  content=" Linkedin "][social name="googleplus" href="www.  googleplus .com" class="  googleplus "  content="  google plus "]
+Description: Your can add social media button with dynamic content,link, class and name using short code.Use shortcode like : [social name="facebook" href="https://www.facebook.com" class=" facebook "   content="Facebook "] [social name="twitter" href="https://www.twitter.com"  class="twitter"  content="Twitter"] [social name="linkedin" href="https://www.linkedin.com" class=" linkedin "  content=" Linkedin "][social  name="googleplus" href="https://www.googleplus.com" class="googleplus"  content="google plus"]
 Version: 1.0
 Author: Ahmed sohel
 Author URI: ahmedctg.website
@@ -29,6 +29,7 @@ along with this program; if not, write to the Free Software
 
 Copyright 2020 Ahmed Sohel.
 */
+defined( 'ABSPATH' ) or die( 'Keep Silent' );
 
 ?>
     <style>
@@ -70,12 +71,12 @@ function ahmed_social_shortcode($attr,$content=null){
     $shortcode = shortcode_atts(array(
         'name'=>'facebook',
         'target'=>'_blank',
-        'href'=>'#',
+        'href'=>'',
         'class'=>'',
         'content'=>$content,
     ),$attr);
 
-    return '<a href="'.$shortcode['href'].'" class='.$shortcode['class'].'>' . $shortcode['content'] . '</a>';
+    return '<a href="'.$shortcode['href'].'" target="'.$shortcode['target'].'" class='.$shortcode['class'].'>' . $shortcode['content'] . '</a>';
 
     return ob_get_clean();
 }

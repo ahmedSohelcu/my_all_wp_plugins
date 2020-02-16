@@ -1,38 +1,14 @@
-/*.menu-main-menu-plugin-container {*/
-/*    width: 100%;*/
-/*    background: #f8f8f8;*/
-/*}*/
-/*.ahmed-plugin-menu {*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    list-style: none;*/
-/*}*/
-
-/*.ahmed-plugin-menu .menu-item {*/
-/*    padding: 4px 12px;*/
-/*    display: inline-block;*/
-/*    text-decoration: none;*/
-/*}*/
-
-
-/*.ahmed-plugin-menu .menu-item a {*/
-/*    padding: 2px;*/
-/*    display: block;*/
-/*    color: #EC6327;*/
-/*    box-shadow: 0 0 0 0 currentColor;*/
-/*}*/
-
-/*----------------------------*/
-
 /* css main menu  */
 .ahmed-plugin-menu {
-    background: #007BFF;
+    background: #44678C;
     padding: 10px!important;
     box-shadow: 0 0 0 0 currentColor;
+    min-height:50px;
 }
+
 .ahmed-plugin-menu li a {
-    color: #fff!important;
-    padding: 8px 8px!important;
+    color: #fff !important;
+    padding: 4px 6px !important;
     box-shadow: 0 0px 0 0 currentColor;
 }
 .ahmed-plugin-menu li a:hover{
@@ -49,11 +25,15 @@
     margin: 0px 0px!important;
 }
 
-
+.menu-main-menu-plugin-container {
+    min-height: 50px;
+    background: #375A7F;
+    color: #fff;
+}
 
 .ahmed-plugin-menu li a:hover {
-    color: #fff!important;
-    background: #3e85c2!important;
+    color: #fff !important;
+    background: #44678C !important;
 }
 
 .sub-menu li {
@@ -77,27 +57,26 @@
 .navbar.navbar-default {
     z-index: 999999!important;
 }
-
 .ahmed-plugin-menu li{position: relative!important}
 
 .ahmed-plugin-menu li:hover ul.sub-menu {
-    left: 0 !important;
+    left: -10 !important;
     opacity: 1 !important;
     position: absolute !important;
-    top: 46px !important;
-    background: #007BFF !important;
+    top: 38px !important;
+    background: #375A7F !important;
     color: #fff !important;
+    border-top: 1px solid #507398;
 }
 .ahmed-plugin-menu .sub-menu li {
     display: inline-block!important;
     margin: 0px 0px!important;
 }
 .ahmed-plugin-menu ul.sub-menu li a {
-    color: #000!important;
-    /* color: #fff; */
-    display: block!important;
-    padding: 9px 15px!important;
-    font-size: 15px!important;
+    display: block !important;
+    padding: 5px 4px !important;
+    font-size: 13px !important;
+    color: #fff;
 }
 .main-navigation ul .sub-menu li a:hover {
     color: #fff!important;
@@ -112,15 +91,15 @@
 
 /*sub two css*/
 .ahmed-plugin-menu ul.sub-menu ul.sub-menu {
-    position: absolute!important;
-    top: 0px!important;
-    right: 0px!important;
-    width: 170px!important;
-    background: #fff!important;
+    position: absolute !important;
+    top: 0px !important;
+    right: 0px !important;
+    width: 170px !important;
+    background: #fff !important;
     /* background: #3279B6; */
-    opacity: 0!important;
-    text-align: left!important;
-    transition: all .5s ease!important;
+    opacity: 0 !important;
+    text-align: left !important;
+    transition: all .5s ease !important;
 }
 .ahmed-plugin-menu ul.sub-menu li:hover ul.sub-menu {
     left: 170px!important;
@@ -137,10 +116,10 @@
     padding: 12px 15px!important;
 }
 .sub-menu.sub-menu li a:hover {
-    color: #fff!important;
-    background: #3e85c2!important;
+    /* color: #fff !important; */
+    /* background: #3e85c2 !important; */
+    color: #EC6327 !important;
 }
-
 .sub-menu.sub-menu li {
     display: inline-block!important;
     margin: 0px 0px!important;
@@ -165,8 +144,156 @@
     border-color: #fff!important;
 }
 /* Css for navigation */
-img{width: 100%!important}
 
 ul{margin: 0!important;padding: 0!important;list-style: none!important;}
 /* css for header  */
 
+
+
+
+
+
+/*featurebangla*/
+
+/*.mainMenuArea {*/
+/*    background: #052962*/
+/*}*/
+
+/*.desktopNav {*/
+/*    background: #052962!important*/
+/*}*/
+
+/*ul.navbar-nav.mr-auto li a:hover {*/
+/*    color: rgba(255, 255, 255, .75)*/
+/*}*/
+
+/*#navbarColor01 {*/
+/*    z-index: 888*/
+/*}*/
+
+.ahmed-plugin-menu li.menu-item {
+    display: inline-block;
+    margin: 0 0
+}
+
+.ahmed-plugin-menu li a:hover {
+    color: #91a5dd;
+    background: #142a63;
+    border-top: 1px solid #ffd;
+    transition: all .5s ease;
+    text-decoration: none
+}
+
+.ahmed-plugin-menu li a {
+    /* border-radius: 8px 9px 0 0; */
+}
+
+ul.navbar-nav.mr-auto li a {
+    /*color: #fff;*/
+    font-size: 17px;
+    padding: 13px 10px
+}
+
+.sub-menu li {
+    border-bottom: 1px solid #253971
+}
+
+.ahmed-plugin-menu ul.sub-menu li {
+    position: relative
+}
+
+.ahmed-plugin-menu .sub-menu {
+    position: absolute;
+    top: 40px;
+    left: -5000%;
+    width: 170px;
+    background: #00144c;
+    opacity: 0;
+    text-align: left;
+    transition: all .5s ease
+}
+
+.navbar.navbar-default {
+    z-index: 999999
+}
+
+.navbar-expand-lg .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    display: inline-block!important
+}
+
+.ahmed-plugin-menu li {
+    position: relative;
+    width: auto;
+    float: left;
+    padding: 3px 3px
+}
+
+.ahmed-plugin-menu li:hover ul.sub-menu {
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 40px
+}
+
+.ahmed-plugin-menu .sub-menu li {
+    display: inline-block;
+    margin: 0 0
+}
+
+.ahmed-plugin-menu .sub-menu li a {
+    color: #fff;
+    display: block;
+    padding: 9px 15px;
+    font-size: 15px
+}
+
+.ahmed-plugin-menu .sub-menu li a:hover {
+    color: #fff;
+    background: #00144c
+}
+
+.ahmed-plugin-menu .sub-menu li {
+    display: inline-block;
+    margin: 0 0;
+    width: 100%
+}
+
+.ahmed-plugin-menu ul.sub-menu ul.sub-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 170px;
+    background: #fff;
+    opacity: 0;
+    text-align: left;
+    transition: all .5s ease
+}
+
+.ahmed-plugin-menu ul.sub-menu li:hover ul.sub-menu {
+    left: 170px;
+    opacity: 1
+}
+
+.sub-menu.sub-menu li {
+    display: inline-block;
+    margin: 0 0
+}
+
+.sub-menu.sub-menu li a {
+    color: #fff;
+    display: block;
+    padding: 12px 15px
+}
+
+.sub-menu.sub-menu li a:hover {
+    color: #fff;
+    background: #3e85c2
+}
+
+.sub-menu.sub-menu li {
+    display: inline-block;
+    margin: 0 0;
+    width: 100%
+}

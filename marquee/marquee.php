@@ -29,6 +29,8 @@ along with this program; if not, write to the Free Software
 
 Copyright 2020 Ahmed Sohel.
 */
+
+defined( 'ABSPATH' ) or die( 'Keep Silent' );
 ?>
 
     <style>
@@ -38,7 +40,10 @@ Copyright 2020 Ahmed Sohel.
             position: relative;
             z-index: 9999;
         }
-
+        .site-inner.marQueeWrapper {
+            background: #000;
+            height: 69px;
+        }
         .marQueeWrapper::after {
             position: absolute;
             top: 1px;

@@ -30,6 +30,7 @@ along with this program; if not, write to the Free Software
 Copyright 2020 Ahmed Sohel.
 
 */
+defined( 'ABSPATH' ) or die( 'Keep Silent' );
 
 wp_enqueue_style('ahmed-style-css',plugins_url('css/style.css',__FILE__));
 

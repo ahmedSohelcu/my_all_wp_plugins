@@ -30,7 +30,7 @@ along with this program; if not, write to the Free Software
 Copyright 2020 Ahmed Sohel.
 */
 
-
+defined( 'ABSPATH' ) or die( 'Keep Silent' );
 
 //register menu
 function ahmed_custom_new_menu() {
@@ -65,7 +65,7 @@ function ahmed_menu_init(){
     add_shortcode('Ahmed_Menu','ahmed_menu_shortcode');
 }
 
-add_action('init','ahmed_menu_init');
+add_action('wp_head','ahmed_menu_init');
 //--------------------------------------------------
 //--------------------------------------------------
 
@@ -76,8 +76,7 @@ add_action('init','ahmed_menu_init');
 //-------------------------------------------------------------------------------------------------------
 function menu_css_and_js_init() {
     wp_enqueue_style('style-css',plugins_url('assets/css/style.css',__FILE__));
-
-    wp_enqueue_script('ahmed-portfolio-js',plugins_url('assets/js/menu-shortcode.js',__FILE__));
+//    wp_enqueue_script('ahmed-portfolio-js',plugins_url('assets/js/menu-shortcode.js',__FILE__));
 }
 
 add_action('wp_enqueue_scripts','menu_css_and_js_init');
